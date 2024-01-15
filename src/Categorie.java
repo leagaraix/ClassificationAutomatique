@@ -25,8 +25,6 @@ public class Categorie {
 
 
     // initialisation du lexique de la catégorie à partir du contenu d'un fichier texte
-    public void initLexique(String nomFichier) {
-        //Exception attendue pour éviter problèmes d'index ?
    public void initLexique(String nomFichier) {
         //Exception attendue pour éviter problèmes d'index ?
         try{
