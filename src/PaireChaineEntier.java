@@ -3,16 +3,16 @@ public class PaireChaineEntier {
     private String chaine;
     private int entier;
 
-    public PaireChaineEntier {
+    public PaireChaineEntier(String chaine, int entier) {
         this.chaine = chaine;
         this.entier = entier;
     }
 
-    public String getChaine {
+    public String getChaine() {
         return chaine;
     }
 
-    public int getEntier {
+    public int getEntier() {
         return entier;
     }
 
