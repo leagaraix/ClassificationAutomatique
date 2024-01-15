@@ -73,7 +73,10 @@ public class Classification {
         }
 
         Categorie sports = new Categorie(sports);
-        
+        sports.initLexique(sports.txt);
+        for (int i=0; i<sports.lexique.size(); i++){
+            Systeme.out.println(sports.lexique.get(i));
+        }
     }
 
 
