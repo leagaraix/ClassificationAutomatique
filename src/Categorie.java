@@ -33,8 +33,9 @@ public class Categorie {
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()){
                 //ajout de la ligne du fichier +passer à la prochaine ligne (a  tester, potentiels problèmes d'index)
-                PaireChaineEntier ligne = newPaireChaineEntier(scanner.nextLine().split(":").get(0), scanner.nextLine().split(":").get(1));
-                lexique.add(ligne);
+                String[] ligne = scanner.nextLine().split(":");
+                PaireChaineEntier insert = new PaireChaineEntier(ligne.nextLine().split(":").get(0), ligne.nextLine().split(":").get(1));
+                lexique.add(insert);
                 scanner.nextLine();
             }
         }catch(IOException e){
