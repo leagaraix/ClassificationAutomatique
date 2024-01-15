@@ -35,11 +35,11 @@ public class Categorie {
                 //ajout de la ligne du fichier +passer à la prochaine ligne (a  tester, potentiels problèmes d'index)
                 String mot;
                 int i=0;
-                while (i<scanner.nextLine().lengh() && scanner.nextLine().charAt(i).equals(":")){
+                while (i<scanner.nextLine().lengh() && scanner.nextLine().charAt(i).toString(":")){
                     mot+i;
                     i++;
                         }
-                lexique.add(new PaireChaineEntier(mot, scanner.nextLine().charAt(mot.lengh()+2)));
+                lexique.add(new PaireChaineEntier(mot, scanner.nextLine().charAt.toString(mot.lengh()+2)));
                 scanner.nextLine();
             }
         }catch(IOException e){
