@@ -35,7 +35,7 @@ public class Categorie {
                 //ajout de la ligne du fichier +passer à la prochaine ligne (a  tester, potentiels problèmes d'index)
                 String mot;
                 int i=0;
-                while (i<scanner.nextLine().lengh() && scanner.nextLine().charAt(i).equals(":")==0){
+                while (i<scanner.nextLine().lengh() && scanner.nextLine().charAt(i).equals(":")){
                     mot+i;
                     i++;
                         }
