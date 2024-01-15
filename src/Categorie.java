@@ -26,14 +26,18 @@ public class Categorie {
 
     // initialisation du lexique de la catégorie à partir du contenu d'un fichier texte
     public void initLexique(String nomFichier) {
-        //lecture du fichier d'entrée
-        FileInputStream file = new FileInputStream(nomFichier);
-        Scanner scanner = new Scanner(file);
-        while(scanner.hasNextLine()){
-            //ajout de la ligne du fichier +passer à la prochaine ligne (a  tester, potentiels problèmes d'index)
-            lexique.add(scanner.NextLine());
-            scanner.NextLine();
-        }
+        //Exception attendue pour éviter problèmes d'index ?
+        try{
+            //lecture du fichier d'entrée
+            FileInputStream file = new FileInputStream(nomFichier);
+            Scanner scanner = new Scanner(file);
+            while(scanner.hasNextLine()){
+                //ajout de la ligne du fichier +passer à la prochaine ligne (a  tester, potentiels problèmes d'index)
+                lexique.add(scanner.NextLine());
+                scanner.NextLine();
+            }
+        }catch(IOException e){
+            e.printStackTrace();
     }
 
 
