@@ -34,11 +34,12 @@ public class Categorie {
             while(scanner.hasNextLine()){
                 //ajout de la ligne du fichier +passer à la prochaine ligne (a  tester, potentiels problèmes d'index)
                 String mot;
-                int i=0
-                while (i<scanner.nextLine().size() && scanner.nextLine().charAt(i).compareTo(":")==0){
-                    mot+i
+                int i=0;
+                while (i<scanner.nextLine().lengh() && scanner.nextLine().charAt(i).equals(":")==0){
+                    mot+i;
+                    i++;
                         }
-                lexique.add(new PaireChaineEntier(mot, scanner.nextLine().charAt(mot.size()+2)));
+                lexique.add(new PaireChaineEntier(mot, scanner.nextLine().charAt(mot.lengh()+2)));
                 scanner.nextLine();
             }
         }catch(IOException e){
